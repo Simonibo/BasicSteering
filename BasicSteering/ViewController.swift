@@ -9,17 +9,35 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var fb: UISegmentedControl!
+    @IBOutlet weak var leftButton: UIButton!
+    var forward = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func fbchanged(_ sender: Any) {
+        var url : URL
+        if fb.selectedSegmentIndex == 0 {
+            forward = true
+            url = URL(string: "https://io.adafruit.com/api/groups/myvalues/send.json?x-aio-key=e03b7fcf6e7c41cab6fc57db7b2102ec&counter=1")!
+        } else {
+            forward = false
+            url = URL(string: "https://io.adafruit.com/api/groups/myvalues/send.json?x-aio-key=e03b7fcf6e7c41cab6fc57db7b2102ec&counter=0")!
+        }
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+        print(forward)
     }
-
+    
+    func transferSignal() {
+        
+    }
 
 }
 
