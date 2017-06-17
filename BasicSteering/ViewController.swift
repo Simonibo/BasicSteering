@@ -13,14 +13,14 @@ class ViewController: UIViewController {
     @IBOutlet var rbutton: UIButton!
     @IBOutlet var lbutton: UIButton!
     @IBOutlet var vbutton: UIButton!
+    @IBOutlet var lzbutton: UIButton!
+    @IBOutlet var vzbutton: UIButton!
+    @IBOutlet var rzbutton: UIButton!
     
-    var forward = true
-    var curDir = 0
-    var closing = false
-    
+    var counter = 0
     /*
      counter-werte:
-     -1: Selbststeuerung aktiv
+     -1: Autopilot aktiv
      0: Keine Bewegung
      1: geradeaus
      2: nach vorne links
@@ -36,15 +36,13 @@ class ViewController: UIViewController {
     }
     
     func applicationDidEnterBackground(application: UIApplication) {
-        closing = true
+        counter = -1
         sendSignal()
     }
     
-    @IBAction func stopclicked(_ sender: Any) {
-        curDir = 0
-        forward = true
-        if let image = UIImage(named: "LKWv.png") {
-            busbutton.setImage(image, for: [])
+    func resetAllImageButtons() {
+        if let image = UIImage(named: "lL.png") {
+            lbutton.setImage(image, for: [])
         }
         if let image = UIImage(named: "rL.png") {
             rbutton.setImage(image, for: [])
@@ -52,63 +50,40 @@ class ViewController: UIViewController {
         if let image = UIImage(named: "vL.png") {
             vbutton.setImage(image, for: [])
         }
-        if let image = UIImage(named: "lL.png") {
-            lbutton.setImage(image, for: [])
+        if let image = UIImage(named: "lLZ.png") {
+            lzbutton.setImage(image, for: [])
         }
-        sendSignal()
+        if let image = UIImage(named: "rLZ.png") {
+            rzbutton.setImage(image, for: [])
+        }
+        if let image = UIImage(named: "vLZ.png") {
+            vzbutton.setImage(image, for: [])
+        }
     }
     
     @IBAction func busclicked(_ sender: Any) {
-        if forward, let image = UIImage(named: "LKWh.png") {
-            busbutton.setImage(image, for: [])
-            forward = false
-        } else if !forward, let imagen = UIImage(named: "LKWv.png") {
-            busbutton.setImage(imagen, for: [])
-            forward = true
-        }
-        
-        if curDir == 2 {
-            curDir = 3
-            if let image = UIImage(named: "rV.png") {
-                rbutton.setImage(image, for: [])
-            }
-            if let image = UIImage(named: "lL.png") {
-                lbutton.setImage(image, for: [])
-            }
-        } else if curDir == 3 {
-            curDir = 2
-            if let image = UIImage(named: "rL.png") {
-                rbutton.setImage(image, for: [])
-            }
-            if let image = UIImage(named: "lV.png") {
-                lbutton.setImage(image, for: [])
-            }
-        }
+        resetAllImageButtons()
+        counter = -1
+        sendSignal()
+    }
+    @IBAction func stopclicked(_ sender: Any) {
+        counter = 0
+        resetAllImageButtons()
         sendSignal()
     }
     
     @IBAction func rightcklicked(_ sender: Any) {
-        curDir = 3
+        counter = 3
+        resetAllImageButtons()
         if let image = UIImage(named: "rV.png") {
             rbutton.setImage(image, for: [])
-        }
-        if let image = UIImage(named: "vL.png") {
-            vbutton.setImage(image, for: [])
-        }
-        if let image = UIImage(named: "lL.png") {
-            lbutton.setImage(image, for: [])
         }
         sendSignal()
     }
     
     @IBAction func leftClicked(_ sender: Any) {
-        curDir = 2
-        if let image = UIImage(named: "rL.png") {
-            rbutton.setImage(image, for: [])
-        }
-        if let image = UIImage(named: "vL.png") {
-            vbutton.setImage(image, for: [])
-        }
+        counter = 2
+        resetAllImageButtons()
         if let image = UIImage(named: "lV.png") {
             lbutton.setImage(image, for: [])
         }
@@ -116,32 +91,42 @@ class ViewController: UIViewController {
     }
     
     @IBAction func aheadClicked(_ sender: Any) {
-        curDir = 1
-        if let image = UIImage(named: "rL.png") {
-            rbutton.setImage(image, for: [])
-        }
+        counter = 1
+        resetAllImageButtons()
         if let image = UIImage(named: "vV.png") {
             vbutton.setImage(image, for: [])
         }
-        if let image = UIImage(named: "lL.png") {
-            lbutton.setImage(image, for: [])
+        sendSignal()
+    }
+    
+    @IBAction func rzclicked(_ sender: Any) {
+        counter = 6
+        resetAllImageButtons()
+        if let image = UIImage(named: "rVZ.png") {
+            rzbutton.setImage(image, for: [])
+        }
+        sendSignal()
+    }
+    
+    @IBAction func lzclicked(_ sender: Any) {
+        counter = 5
+        resetAllImageButtons()
+        if let image = UIImage(named: "lVZ.png") {
+            lzbutton.setImage(image, for: [])
+        }
+        sendSignal()
+    }
+    
+    @IBAction func vzclicked(_ sender: Any) {
+        counter = 4
+        resetAllImageButtons()
+        if let image = UIImage(named: "vVZ.png") {
+            vzbutton.setImage(image, for: [])
         }
         sendSignal()
     }
     
     func sendSignal() {
-        var ncurDir = curDir
-        if !forward {
-            if curDir == 2 {
-                ncurDir = 3
-            } else if curDir == 3 {
-                ncurDir = 2
-            }
-        }
-        let counter = (closing ? -1 : (ncurDir == 0 ? 0 : ((forward ? 0 : 1) * 3 + ncurDir)))
-        if closing {
-            closing = false
-        }
         var request = URLRequest(url: URL(string: "https://io.adafruit.com/api/groups/myvalues/send.json?x-aio-key=e03b7fcf6e7c41cab6fc57db7b2102ec&counter=" + String(counter))!)
         request.httpMethod = "POST"
         let session = URLSession.shared

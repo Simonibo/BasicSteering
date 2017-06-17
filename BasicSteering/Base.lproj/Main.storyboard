@@ -29,19 +29,10 @@
                                     <action selector="leftClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sLD-3k-ZjM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njY-k6-0Ix">
-                                <rect key="frame" x="98" y="473" width="124" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="STOP"/>
-                                <connections>
-                                    <action selector="stopclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nfr-Ck-mUo"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onH-hq-QPn">
                                 <rect key="frame" x="111" y="38" width="99" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="straight ahead" image="vL.png"/>
+                                <state key="normal" image="vL.png"/>
                                 <connections>
                                     <action selector="aheadClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WlP-G9-e5g"/>
                                 </connections>
@@ -59,17 +50,52 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="LKWv.png"/>
                                 <connections>
-                                    <action selector="busclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OYR-TY-MbG"/>
+                                    <action selector="busclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u6S-Dc-3jA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uV-Kk-Eus" userLabel="lzbutton">
+                                <rect key="frame" x="11" y="466" width="87" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="lLZ.png"/>
+                                <connections>
+                                    <action selector="lzclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dc6-7y-ysY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBm-Z7-0L0">
+                                <rect key="frame" x="92" y="466" width="99" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="vLZ.png"/>
+                                <connections>
+                                    <action selector="vzclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h92-cJ-Udc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njY-k6-0Ix">
+                                <rect key="frame" x="199" y="262" width="124" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="STOP"/>
+                                <connections>
+                                    <action selector="stopclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nfr-Ck-mUo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fz7-F5-nsH" userLabel="rzbutton">
+                                <rect key="frame" x="199" y="476" width="90" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="rLZ.png"/>
+                                <connections>
+                                    <action selector="rzclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jTS-AJ-OqV"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="busbutton" destination="JH8-yW-XuW" id="MnJ-Mt-d5z"/>
                         <outlet property="lbutton" destination="DSK-3I-QA5" id="zXM-pO-gur"/>
+                        <outlet property="lzbutton" destination="5uV-Kk-Eus" id="57A-Cj-PMH"/>
                         <outlet property="rbutton" destination="daw-0S-Pi6" id="Oax-Fs-MuI"/>
+                        <outlet property="rzbutton" destination="Fz7-F5-nsH" id="AkJ-Em-qni"/>
                         <outlet property="vbutton" destination="onH-hq-QPn" id="JOT-g2-o9j"/>
+                        <outlet property="vzbutton" destination="MBm-Z7-0L0" id="ZhF-2V-9IJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -79,8 +105,11 @@
     </scenes>
     <resources>
         <image name="LKWv.png" width="146" height="396"/>
-        <image name="lL.png" width="2105" height="1488"/>
-        <image name="rL.png" width="2105" height="1488"/>
-        <image name="vL.png" width="1448" height="2047"/>
+        <image name="lL.png" width="1309" height="1312"/>
+        <image name="lLZ.png" width="1309" height="1312"/>
+        <image name="rL.png" width="1311" height="1316"/>
+        <image name="rLZ.png" width="1311" height="1316"/>
+        <image name="vL.png" width="1285" height="1673"/>
+        <image name="vLZ.png" width="1285" height="1673"/>
     </resources>
 </document>
