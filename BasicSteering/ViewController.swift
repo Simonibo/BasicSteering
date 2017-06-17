@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  BasicSteering
 //
-//  Created by user on 16.06.17.
-//  Copyright © 2017 user. All rights reserved.
+//  Created by COD3LTA on 16.06.17.
+//  Copyright © 2017 COD3LTA. All rights reserved.
 //
 
 import UIKit
@@ -17,6 +17,18 @@ class ViewController: UIViewController {
     var forward = true
     var curDir = 0
     var closing = false
+    
+    /*
+     counter-werte:
+     -1: Selbststeuerung aktiv
+     0: Keine Bewegung
+     1: geradeaus
+     2: nach vorne links
+     3: nach vorne rechts
+     4: zurück
+     5: nach hinten links (aus Sicht des "Fahrers")
+     6: nach hinten rechts
+     */
     
     override func viewDidLoad() {
         super.viewDidLoad()
