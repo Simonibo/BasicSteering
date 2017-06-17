@@ -48,13 +48,14 @@ class ViewController: UIViewController {
             busbutton.setImage(imagen, for: [])
             forward = true
         }
+        
         if curDir == 2 {
             curDir = 3
             if let image = UIImage(named: "rV.png") {
                 rbutton.setImage(image, for: [])
             }
             if let image = UIImage(named: "lL.png") {
-                rbutton.setImage(image, for: [])
+                lbutton.setImage(image, for: [])
             }
         } else if curDir == 3 {
             curDir = 2
@@ -62,7 +63,7 @@ class ViewController: UIViewController {
                 rbutton.setImage(image, for: [])
             }
             if let image = UIImage(named: "lV.png") {
-                rbutton.setImage(image, for: [])
+                lbutton.setImage(image, for: [])
             }
         }
         sendSignal()
@@ -111,14 +112,15 @@ class ViewController: UIViewController {
     }
     
     func sendSignal() {
+        var ncurDir = curDir
         if !forward {
             if curDir == 2 {
-                curDir = 3
-            } else if curDir == 3{
-                curDir = 2
+                ncurDir = 3
+            } else if curDir == 3 {
+                ncurDir = 2
             }
         }
-        let counter = (curDir == 0 ? 0 : ((forward ? 0 : 1) * 3 + curDir))
+        let counter = (ncurDir == 0 ? 0 : ((forward ? 0 : 1) * 3 + ncurDir))
         var request = URLRequest(url: URL(string: "https://io.adafruit.com/api/groups/myvalues/send.json?x-aio-key=e03b7fcf6e7c41cab6fc57db7b2102ec&counter=" + String(counter))!)
         request.httpMethod = "POST"
         let session = URLSession.shared
