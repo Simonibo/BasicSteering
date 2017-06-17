@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     
     let adakey = "2a309c02ac61478f9a6c42fcc8315ffe"
     var counter = 0
+    var auto = false
+    
     /*
      counter-werte:
      -1: Autopilot aktiv
@@ -60,10 +62,16 @@ class ViewController: UIViewController {
         if let image = UIImage(named: "vLZ.png") {
             vzbutton.setImage(image, for: [])
         }
+        if let image = UIImage(named: "LKWv.png") {
+            busbutton.setImage(image, for: [])
+        }
     }
     
     @IBAction func busclicked(_ sender: Any) {
         resetAllImageButtons()
+        if let image = UIImage(named: "LKWh.png") {
+            busbutton.setImage(image, for: [])
+        }
         counter = -1
         sendSignal()
     }
@@ -128,9 +136,9 @@ class ViewController: UIViewController {
     }
     
     func sendSignal() {
-        let url = "https://io.adafruit.com/api/groups/myvalues/send.json?x-aio-key=" + adakey + "&counter=" + String(counter)
-        print(url)
-        var request = URLRequest(url: URL(string: url)!)
+        let urli = "https://io.adafruit.com/api/groups/myvalues/send.json?x-aio-key=" + adakey + "&counter=" + String(counter)
+        print(urli)
+        var request = URLRequest(url: URL(string: urli)!)
         request.httpMethod = "POST"
         let session = URLSession.shared
         
