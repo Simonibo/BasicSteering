@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet var vzbutton: UIButton!
     @IBOutlet var rzbutton: UIButton!
     
-    let adakey = "2a309c02ac61478f9a6c42fcc8315ffe"
+    let adakey = "6e15aaddcb8d4b7ebdbce8f612020469"
     var counter = 0
     var auto = false
     
