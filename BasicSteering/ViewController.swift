@@ -37,8 +37,7 @@ class ViewController: UIViewController {
         if let image = UIImage(named: "lL.png") {
             lbutton.setImage(image, for: [])
         }
-        sendSignal(url: URL(string: "https://io.adafruit.com/api/groups/myvalues/send.json?x-aio-key=e03b7fcf6e7c41cab6fc57db7b2102ec&curdir=" + String(curDir))!)
-        sendSignal(url: URL(string: "https://io.adafruit.com/api/groups/myvalues/send.json?x-aio-key=e03b7fcf6e7c41cab6fc57db7b2102ec&forward=1")!)
+        sendSignal()
     }
     
     @IBAction func busclicked(_ sender: Any) {
@@ -49,7 +48,7 @@ class ViewController: UIViewController {
             busbutton.setImage(imagen, for: [])
             forward = true
         }
-        sendSignal(url: URL(string: "https://io.adafruit.com/api/groups/myvalues/send.json?x-aio-key=e03b7fcf6e7c41cab6fc57db7b2102ec&forward=" + String(forward ? 1 : 0))!)
+        sendSignal()
     }
     
     @IBAction func rightcklicked(_ sender: Any) {
@@ -63,11 +62,11 @@ class ViewController: UIViewController {
         if let image = UIImage(named: "lL.png") {
             lbutton.setImage(image, for: [])
         }
-        sendSignal(url: URL(string: "https://io.adafruit.com/api/groups/myvalues/send.json?x-aio-key=e03b7fcf6e7c41cab6fc57db7b2102ec&curdir=" + String(curDir))!)
+        sendSignal()
     }
     
     @IBAction func leftClicked(_ sender: Any) {
-        curDir = 1
+        curDir = 2
         if let image = UIImage(named: "rL.png") {
             rbutton.setImage(image, for: [])
         }
@@ -77,11 +76,11 @@ class ViewController: UIViewController {
         if let image = UIImage(named: "lV.png") {
             lbutton.setImage(image, for: [])
         }
-        sendSignal(url: URL(string: "https://io.adafruit.com/api/groups/myvalues/send.json?x-aio-key=e03b7fcf6e7c41cab6fc57db7b2102ec&curdir=" + String(curDir))!)
+        sendSignal()
     }
     
     @IBAction func aheadClicked(_ sender: Any) {
-        curDir = 2
+        curDir = 1
         if let image = UIImage(named: "rL.png") {
             rbutton.setImage(image, for: [])
         }
@@ -91,11 +90,12 @@ class ViewController: UIViewController {
         if let image = UIImage(named: "lL.png") {
             lbutton.setImage(image, for: [])
         }
-        sendSignal(url: URL(string: "https://io.adafruit.com/api/groups/myvalues/send.json?x-aio-key=e03b7fcf6e7c41cab6fc57db7b2102ec&curdir=" + String(curDir))!)
+        sendSignal()
     }
     
-    func sendSignal(url: URL) {
-        var request = URLRequest(url: url)
+    func sendSignal() {
+        let counter = (curDir == 0 ? 0 : ((forward ? 0 : 1) * 3 + curDir))
+        var request = URLRequest(url: URL(string: "https://io.adafruit.com/api/groups/myvalues/send.json?x-aio-key=e03b7fcf6e7c41cab6fc57db7b2102ec&counter=" + String(counter))!)
         request.httpMethod = "POST"
         let session = URLSession.shared
         

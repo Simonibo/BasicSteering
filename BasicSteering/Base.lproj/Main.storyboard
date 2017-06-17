@@ -33,7 +33,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JH8-yW-XuW">
                                 <rect key="frame" x="115" y="196" width="91" height="176"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="LKW.gif"/>
+                                <state key="normal" title="Button" image="LKWv.png"/>
                                 <connections>
                                     <action selector="busclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OYR-TY-MbG"/>
                                 </connections>
@@ -78,7 +78,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LKW.gif" width="201" height="705"/>
+        <image name="LKWv.png" width="146" height="396"/>
         <image name="lL.png" width="2047" height="1448"/>
         <image name="rL.png" width="2047" height="1448"/>
         <image name="vL.png" width="1448" height="2047"/>
