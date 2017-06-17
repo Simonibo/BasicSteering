@@ -128,7 +128,9 @@ class ViewController: UIViewController {
     }
     
     func sendSignal() {
-        var request = URLRequest(url: URL(string: "https://io.adafruit.com/api/groups/myvalues/send.json?x-aio-key=" + adakey + "&counter=" + String(counter))!)
+        let url = "https://io.adafruit.com/api/groups/myvalues/send.json?x-aio-key=" + adakey + "&counter=" + String(counter)
+        print(url)
+        var request = URLRequest(url: URL(string: url)!)
         request.httpMethod = "POST"
         let session = URLSession.shared
         
