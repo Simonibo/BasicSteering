@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet var vzbutton: UIButton!
     @IBOutlet var rzbutton: UIButton!
     
+    let adakey = "6e15aaddcb8d4b7ebdbce8f612020469"
     var counter = 0
     /*
      counter-werte:
@@ -127,7 +128,7 @@ class ViewController: UIViewController {
     }
     
     func sendSignal() {
-        var request = URLRequest(url: URL(string: "https://io.adafruit.com/api/groups/myvalues/send.json?x-aio-key=e03b7fcf6e7c41cab6fc57db7b2102ec&counter=" + String(counter))!)
+        var request = URLRequest(url: URL(string: "https://io.adafruit.com/api/groups/myvalues/send.json?x-aio-key=" + adakey + "&counter=" + String(counter))!)
         request.httpMethod = "POST"
         let session = URLSession.shared
         
