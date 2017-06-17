@@ -96,7 +96,7 @@
 				TargetAttributes = {
 					CE4A1D741EF3FC7500A3677B = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = XE8325V84F;
+						DevelopmentTeam = C5LHHD873E;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -263,7 +263,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XE8325V84F;
+				DEVELOPMENT_TEAM = C5LHHD873E;
 				INFOPLIST_FILE = BasicSteering/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cod3lta.BasicSteering;
@@ -276,7 +276,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XE8325V84F;
+				DEVELOPMENT_TEAM = C5LHHD873E;
 				INFOPLIST_FILE = BasicSteering/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cod3lta.BasicSteering;
@@ -304,6 +304,7 @@
 				CE4A1D891EF3FC7500A3677B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
