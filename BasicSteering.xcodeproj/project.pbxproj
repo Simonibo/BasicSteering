@@ -12,7 +12,13 @@
 		CE4A1D7E1EF3FC7500A3677B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4A1D7C1EF3FC7500A3677B /* Main.storyboard */; };
 		CE4A1D801EF3FC7500A3677B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4A1D7F1EF3FC7500A3677B /* Assets.xcassets */; };
 		CE4A1D831EF3FC7500A3677B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4A1D811EF3FC7500A3677B /* LaunchScreen.storyboard */; };
-		F73AA2031EF5171E0056A25F /* LKW.gif in Resources */ = {isa = PBXBuildFile; fileRef = F73AA2021EF5171E0056A25F /* LKW.gif */; };
+		F73AA20D1EF51A9D0056A25F /* LKW.gif in Resources */ = {isa = PBXBuildFile; fileRef = F73AA20C1EF51A9D0056A25F /* LKW.gif */; };
+		F73AA2141EF51D480056A25F /* lL.png in Resources */ = {isa = PBXBuildFile; fileRef = F73AA20E1EF51D470056A25F /* lL.png */; };
+		F73AA2151EF51D480056A25F /* vV.png in Resources */ = {isa = PBXBuildFile; fileRef = F73AA20F1EF51D470056A25F /* vV.png */; };
+		F73AA2161EF51D480056A25F /* vL.png in Resources */ = {isa = PBXBuildFile; fileRef = F73AA2101EF51D480056A25F /* vL.png */; };
+		F73AA2171EF51D480056A25F /* lV.png in Resources */ = {isa = PBXBuildFile; fileRef = F73AA2111EF51D480056A25F /* lV.png */; };
+		F73AA2181EF51D480056A25F /* rV.png in Resources */ = {isa = PBXBuildFile; fileRef = F73AA2121EF51D480056A25F /* rV.png */; };
+		F73AA2191EF51D480056A25F /* rL.png in Resources */ = {isa = PBXBuildFile; fileRef = F73AA2131EF51D480056A25F /* rL.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +29,13 @@
 		CE4A1D7F1EF3FC7500A3677B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE4A1D821EF3FC7500A3677B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE4A1D841EF3FC7500A3677B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F73AA2021EF5171E0056A25F /* LKW.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = LKW.gif; path = ../../Downloads/LKW.gif; sourceTree = "<group>"; };
+		F73AA20C1EF51A9D0056A25F /* LKW.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = LKW.gif; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/LKW.gif"; sourceTree = "<group>"; };
+		F73AA20E1EF51D470056A25F /* lL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lL.png; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/lL.png"; sourceTree = "<group>"; };
+		F73AA20F1EF51D470056A25F /* vV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vV.png; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/vV.png"; sourceTree = "<group>"; };
+		F73AA2101EF51D480056A25F /* vL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vL.png; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/vL.png"; sourceTree = "<group>"; };
+		F73AA2111EF51D480056A25F /* lV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lV.png; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/lV.png"; sourceTree = "<group>"; };
+		F73AA2121EF51D480056A25F /* rV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rV.png; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/rV.png"; sourceTree = "<group>"; };
+		F73AA2131EF51D480056A25F /* rL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rL.png; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/rL.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +52,13 @@
 		CE4A1D6C1EF3FC7500A3677B = {
 			isa = PBXGroup;
 			children = (
-				F73AA2021EF5171E0056A25F /* LKW.gif */,
+				F73AA20C1EF51A9D0056A25F /* LKW.gif */,
+				F73AA2131EF51D480056A25F /* rL.png */,
+				F73AA2101EF51D480056A25F /* vL.png */,
+				F73AA20E1EF51D470056A25F /* lL.png */,
+				F73AA2121EF51D480056A25F /* rV.png */,
+				F73AA20F1EF51D470056A25F /* vV.png */,
+				F73AA2111EF51D480056A25F /* lV.png */,
 				CE4A1D771EF3FC7500A3677B /* BasicSteering */,
 				CE4A1D761EF3FC7500A3677B /* Products */,
 			);
@@ -127,9 +145,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F73AA2141EF51D480056A25F /* lL.png in Resources */,
 				CE4A1D831EF3FC7500A3677B /* LaunchScreen.storyboard in Resources */,
+				F73AA2181EF51D480056A25F /* rV.png in Resources */,
+				F73AA2161EF51D480056A25F /* vL.png in Resources */,
+				F73AA2171EF51D480056A25F /* lV.png in Resources */,
+				F73AA2191EF51D480056A25F /* rL.png in Resources */,
+				F73AA20D1EF51A9D0056A25F /* LKW.gif in Resources */,
+				F73AA2151EF51D480056A25F /* vV.png in Resources */,
 				CE4A1D801EF3FC7500A3677B /* Assets.xcassets in Resources */,
-				F73AA2031EF5171E0056A25F /* LKW.gif in Resources */,
 				CE4A1D7E1EF3FC7500A3677B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

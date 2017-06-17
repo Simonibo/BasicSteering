@@ -9,7 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var fb: UISegmentedControl!
+    var curDir = 0
+    
+    @IBAction func busclicked(_ sender: Any) {
+    }
+    
+    @IBAction func rightcklicked(_ sender: Any) {
+        curDir = 3
+    }
+    
+    @IBAction func leftClicked(_ sender: Any) {
+        curDir = 1
+    }
+    
+    @IBAction func aheadClicked(_ sender: Any) {
+        curDir = 2
+    }
+    
     @IBOutlet weak var leftButton: UIButton!
     var forward = true
     
@@ -19,7 +35,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func fbchanged(_ sender: Any) {
-        
         var url : URL
         if fb.selectedSegmentIndex == 0 {
             forward = true
@@ -36,20 +51,7 @@ class ViewController: UIViewController {
         session.dataTask(with: request) {data, response, err in
             print("Entered the completionHandler")
             }.resume()
-        
-        /*
-        if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        } else {
-            UIApplication.shared.openURL(url)
-        }
-         */
         print(forward)
     }
-    
-    func transferSignal() {
-        
-    }
-
 }
 
