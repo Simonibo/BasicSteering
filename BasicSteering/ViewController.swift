@@ -44,9 +44,11 @@ class ViewController: UIViewController {
         if forward, let image = UIImage(named: "LKWh.png") {
             busbutton.setImage(image, for: [])
             forward = false
+            print("zuruck")
         } else if !forward, let imagen = UIImage(named: "LKWv.png") {
             busbutton.setImage(imagen, for: [])
             forward = true
+            print("vorne")
         }
         sendSignal()
     }
@@ -94,6 +96,13 @@ class ViewController: UIViewController {
     }
     
     func sendSignal() {
+        if !forward {
+            if curDir == 2 {
+                curDir = 3
+            } else if curDir == 3{
+                curDir = 2
+            }
+        }
         let counter = (curDir == 0 ? 0 : ((forward ? 0 : 1) * 3 + curDir))
         var request = URLRequest(url: URL(string: "https://io.adafruit.com/api/groups/myvalues/send.json?x-aio-key=e03b7fcf6e7c41cab6fc57db7b2102ec&counter=" + String(counter))!)
         request.httpMethod = "POST"
