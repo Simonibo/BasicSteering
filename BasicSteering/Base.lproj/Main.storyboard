@@ -41,18 +41,72 @@
                                     <fragment>
                                         <string key="content">Während des Code+Design Camps Köln 2017 der CODE University Berlin entwickelten wir einen autonom fahrenden LKW mit Steuerung per iOS-App.
 
-Code
-Marvin von Hagen
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="SFMono-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Code">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="SFMono-Medium"/>
+                                            <font key="NSOriginalFont" size="24" name="SFMono-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="SFMono-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Marvin von Hagen
 Simon Bohnen
 Simon Wilmes
 Jan Mustermann
-
-Design
-Pascal Schule
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="SFMono-Light"/>
+                                            <font key="NSOriginalFont" size="24" name="SFMono-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="SFMono-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Design">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="SFMono-Medium"/>
+                                            <font key="NSOriginalFont" size="24" name="SFMono-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="SFMono-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Pascal Schule
 Manuel Blum</string>
                                         <attributes>
-                                            <font key="NSFont" size="25" name=".SFNSDisplay"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <font key="NSFont" size="24" name="SFMono-Light"/>
+                                            <font key="NSOriginalFont" size="24" name="SFMono-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
