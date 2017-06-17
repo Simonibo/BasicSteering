@@ -44,6 +44,7 @@ class ViewController: UIViewController {
     }
     
     func resetAllImageButtons() {
+        auto = false
         if let image = UIImage(named: "lL.png") {
             lbutton.setImage(image, for: [])
         }
@@ -68,11 +69,21 @@ class ViewController: UIViewController {
     }
     
     @IBAction func busclicked(_ sender: Any) {
-        resetAllImageButtons()
-        if let image = UIImage(named: "LKWh.png") {
-            busbutton.setImage(image, for: [])
+        if auto {
+            resetAllImageButtons()
+            if let image = UIImage(named: "LKWv.png") {
+                busbutton.setImage(image, for: [])
+            }
+            counter = 0
+            auto = false
+        } else {
+            resetAllImageButtons()
+            if let image = UIImage(named: "LKWh.png") {
+                busbutton.setImage(image, for: [])
+            }
+            counter = -1
+            auto = true
         }
-        counter = -1
         sendSignal()
     }
     @IBAction func stopclicked(_ sender: Any) {
