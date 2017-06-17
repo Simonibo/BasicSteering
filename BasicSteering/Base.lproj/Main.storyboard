@@ -21,20 +21,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daw-0S-Pi6">
-                                <rect key="frame" x="265" y="269" width="32" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njY-k6-0Ix">
+                                <rect key="frame" x="98" y="397" width="124" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="rL.png"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="STOP"/>
                                 <connections>
-                                    <action selector="rightcklicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3f1-BZ-KuS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSK-3I-QA5">
-                                <rect key="frame" x="37" y="269" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="lL.png"/>
-                                <connections>
-                                    <action selector="leftClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sLD-3k-ZjM"/>
+                                    <action selector="stopclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nfr-Ck-mUo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JH8-yW-XuW">
@@ -53,13 +46,20 @@
                                     <action selector="aheadClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WlP-G9-e5g"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njY-k6-0Ix">
-                                <rect key="frame" x="98" y="397" width="124" height="75"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daw-0S-Pi6">
+                                <rect key="frame" x="218" y="79" width="86" height="71"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="STOP"/>
+                                <state key="normal" image="rL.png"/>
                                 <connections>
-                                    <action selector="stopclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nfr-Ck-mUo"/>
+                                    <action selector="rightcklicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3f1-BZ-KuS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSK-3I-QA5">
+                                <rect key="frame" x="16" y="79" width="87" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="lL.png"/>
+                                <connections>
+                                    <action selector="leftClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sLD-3k-ZjM"/>
                                 </connections>
                             </button>
                         </subviews>

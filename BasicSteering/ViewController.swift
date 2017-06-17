@@ -24,6 +24,10 @@ class ViewController: UIViewController {
     
     @IBAction func stopclicked(_ sender: Any) {
         curDir = 0
+        forward = true
+        if let image = UIImage(named: "LKWv.png") {
+            busbutton.setImage(image, for: [])
+        }
         if let image = UIImage(named: "rL.png") {
             rbutton.setImage(image, for: [])
         }
@@ -34,13 +38,14 @@ class ViewController: UIViewController {
             lbutton.setImage(image, for: [])
         }
         sendSignal(url: URL(string: "https://io.adafruit.com/api/groups/myvalues/send.json?x-aio-key=e03b7fcf6e7c41cab6fc57db7b2102ec&curdir=" + String(curDir))!)
+        sendSignal(url: URL(string: "https://io.adafruit.com/api/groups/myvalues/send.json?x-aio-key=e03b7fcf6e7c41cab6fc57db7b2102ec&forward=1")!)
     }
     
     @IBAction func busclicked(_ sender: Any) {
-        if forward, let image = UIImage(named: "backwardlkw.gif") {
+        if forward, let image = UIImage(named: "LKWh.png") {
             busbutton.setImage(image, for: [])
             forward = false
-        } else if !forward, let imagen = UIImage(named: "LKW.gif") {
+        } else if !forward, let imagen = UIImage(named: "LKWv.png") {
             busbutton.setImage(imagen, for: [])
             forward = true
         }

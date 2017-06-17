@@ -12,14 +12,14 @@
 		CE4A1D7E1EF3FC7500A3677B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4A1D7C1EF3FC7500A3677B /* Main.storyboard */; };
 		CE4A1D801EF3FC7500A3677B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4A1D7F1EF3FC7500A3677B /* Assets.xcassets */; };
 		CE4A1D831EF3FC7500A3677B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4A1D811EF3FC7500A3677B /* LaunchScreen.storyboard */; };
-		F73AA20D1EF51A9D0056A25F /* LKW.gif in Resources */ = {isa = PBXBuildFile; fileRef = F73AA20C1EF51A9D0056A25F /* LKW.gif */; };
+		F7212B3E1EF5298C00CA9E0E /* LKWv.png in Resources */ = {isa = PBXBuildFile; fileRef = F7212B3D1EF5298B00CA9E0E /* LKWv.png */; };
+		F7212B401EF5299300CA9E0E /* LKWh.png in Resources */ = {isa = PBXBuildFile; fileRef = F7212B3F1EF5299200CA9E0E /* LKWh.png */; };
 		F73AA2141EF51D480056A25F /* lL.png in Resources */ = {isa = PBXBuildFile; fileRef = F73AA20E1EF51D470056A25F /* lL.png */; };
 		F73AA2151EF51D480056A25F /* vV.png in Resources */ = {isa = PBXBuildFile; fileRef = F73AA20F1EF51D470056A25F /* vV.png */; };
 		F73AA2161EF51D480056A25F /* vL.png in Resources */ = {isa = PBXBuildFile; fileRef = F73AA2101EF51D480056A25F /* vL.png */; };
 		F73AA2171EF51D480056A25F /* lV.png in Resources */ = {isa = PBXBuildFile; fileRef = F73AA2111EF51D480056A25F /* lV.png */; };
 		F73AA2181EF51D480056A25F /* rV.png in Resources */ = {isa = PBXBuildFile; fileRef = F73AA2121EF51D480056A25F /* rV.png */; };
 		F73AA2191EF51D480056A25F /* rL.png in Resources */ = {isa = PBXBuildFile; fileRef = F73AA2131EF51D480056A25F /* rL.png */; };
-		F73AA21B1EF5234E0056A25F /* backwardlkw.gif in Resources */ = {isa = PBXBuildFile; fileRef = F73AA21A1EF5234D0056A25F /* backwardlkw.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,14 +30,14 @@
 		CE4A1D7F1EF3FC7500A3677B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE4A1D821EF3FC7500A3677B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE4A1D841EF3FC7500A3677B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F73AA20C1EF51A9D0056A25F /* LKW.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = LKW.gif; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/LKW.gif"; sourceTree = "<group>"; };
+		F7212B3D1EF5298B00CA9E0E /* LKWv.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LKWv.png; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/LKWv.png"; sourceTree = "<group>"; };
+		F7212B3F1EF5299200CA9E0E /* LKWh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LKWh.png; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/LKWh.png"; sourceTree = "<group>"; };
 		F73AA20E1EF51D470056A25F /* lL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lL.png; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/lL.png"; sourceTree = "<group>"; };
 		F73AA20F1EF51D470056A25F /* vV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vV.png; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/vV.png"; sourceTree = "<group>"; };
 		F73AA2101EF51D480056A25F /* vL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vL.png; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/vL.png"; sourceTree = "<group>"; };
 		F73AA2111EF51D480056A25F /* lV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lV.png; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/lV.png"; sourceTree = "<group>"; };
 		F73AA2121EF51D480056A25F /* rV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rV.png; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/rV.png"; sourceTree = "<group>"; };
 		F73AA2131EF51D480056A25F /* rL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rL.png; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/rL.png"; sourceTree = "<group>"; };
-		F73AA21A1EF5234D0056A25F /* backwardlkw.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = backwardlkw.gif; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/backwardlkw.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +54,8 @@
 		CE4A1D6C1EF3FC7500A3677B = {
 			isa = PBXGroup;
 			children = (
-				F73AA20C1EF51A9D0056A25F /* LKW.gif */,
-				F73AA21A1EF5234D0056A25F /* backwardlkw.gif */,
+				F7212B3F1EF5299200CA9E0E /* LKWh.png */,
+				F7212B3D1EF5298B00CA9E0E /* LKWv.png */,
 				F73AA2131EF51D480056A25F /* rL.png */,
 				F73AA2101EF51D480056A25F /* vL.png */,
 				F73AA20E1EF51D470056A25F /* lL.png */,
@@ -151,11 +151,11 @@
 				F73AA2141EF51D480056A25F /* lL.png in Resources */,
 				CE4A1D831EF3FC7500A3677B /* LaunchScreen.storyboard in Resources */,
 				F73AA2181EF51D480056A25F /* rV.png in Resources */,
+				F7212B3E1EF5298C00CA9E0E /* LKWv.png in Resources */,
 				F73AA2161EF51D480056A25F /* vL.png in Resources */,
 				F73AA2171EF51D480056A25F /* lV.png in Resources */,
-				F73AA21B1EF5234E0056A25F /* backwardlkw.gif in Resources */,
 				F73AA2191EF51D480056A25F /* rL.png in Resources */,
-				F73AA20D1EF51A9D0056A25F /* LKW.gif in Resources */,
+				F7212B401EF5299300CA9E0E /* LKWh.png in Resources */,
 				F73AA2151EF51D480056A25F /* vV.png in Resources */,
 				CE4A1D801EF3FC7500A3677B /* Assets.xcassets in Resources */,
 				CE4A1D7E1EF3FC7500A3677B /* Main.storyboard in Resources */,
