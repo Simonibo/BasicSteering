@@ -9,13 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var curDir = 0
-    
     @IBOutlet var busbutton: UIButton!
     @IBOutlet var rbutton: UIButton!
     @IBOutlet var lbutton: UIButton!
     @IBOutlet var vbutton: UIButton!
+    
     var forward = true
+    var curDir = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
