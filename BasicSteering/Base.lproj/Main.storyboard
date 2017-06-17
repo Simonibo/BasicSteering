@@ -64,7 +64,6 @@
                     </view>
                     <connections>
                         <outlet property="lbutton" destination="DSK-3I-QA5" id="zXM-pO-gur"/>
-                        <outlet property="leftButton" destination="DSK-3I-QA5" id="Vsj-DG-zT9"/>
                         <outlet property="rbutton" destination="daw-0S-Pi6" id="Oax-Fs-MuI"/>
                         <outlet property="vbutton" destination="onH-hq-QPn" id="JOT-g2-o9j"/>
                     </connections>
