@@ -16,10 +16,16 @@ class ViewController: UIViewController {
     
     var forward = true
     var curDir = 0
+    var closing = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func applicationDidEnterBackground(application: UIApplication) {
+        closing = true
+        sendSignal()
     }
     
     @IBAction func stopclicked(_ sender: Any) {
@@ -120,7 +126,10 @@ class ViewController: UIViewController {
                 ncurDir = 2
             }
         }
-        let counter = (ncurDir == 0 ? 0 : ((forward ? 0 : 1) * 3 + ncurDir))
+        let counter = (closing ? -1 : (ncurDir == 0 ? 0 : ((forward ? 0 : 1) * 3 + ncurDir)))
+        if closing {
+            closing = false
+        }
         var request = URLRequest(url: URL(string: "https://io.adafruit.com/api/groups/myvalues/send.json?x-aio-key=e03b7fcf6e7c41cab6fc57db7b2102ec&counter=" + String(counter))!)
         request.httpMethod = "POST"
         let session = URLSession.shared
