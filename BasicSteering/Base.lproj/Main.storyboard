@@ -24,7 +24,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daw-0S-Pi6">
                                 <rect key="frame" x="265" y="269" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="right" image="rL.png"/>
+                                <state key="normal" image="rL.png"/>
                                 <connections>
                                     <action selector="rightcklicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3f1-BZ-KuS"/>
                                 </connections>
@@ -48,7 +48,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onH-hq-QPn">
                                 <rect key="frame" x="111" y="38" width="99" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="straight ahead" image="inactive.png"/>
+                                <state key="normal" title="straight ahead" image="vL.png"/>
                                 <connections>
                                     <action selector="aheadClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WlP-G9-e5g"/>
                                 </connections>
@@ -63,7 +63,10 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="lbutton" destination="DSK-3I-QA5" id="zXM-pO-gur"/>
                         <outlet property="leftButton" destination="DSK-3I-QA5" id="Vsj-DG-zT9"/>
+                        <outlet property="rbutton" destination="daw-0S-Pi6" id="Oax-Fs-MuI"/>
+                        <outlet property="vbutton" destination="onH-hq-QPn" id="JOT-g2-o9j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -73,8 +76,8 @@
     </scenes>
     <resources>
         <image name="LKW.gif" width="201" height="705"/>
-        <image name="inactive.png" width="360" height="187"/>
         <image name="lL.png" width="2047" height="1448"/>
         <image name="rL.png" width="2047" height="1448"/>
+        <image name="vL.png" width="1448" height="2047"/>
     </resources>
 </document>
