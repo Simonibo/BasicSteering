@@ -40,17 +40,10 @@
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Während des Code+Design Camps Köln 2017 der CODE University Berlin entwickelten wir einen autonom fahrenden LKW mit Steuerung per iOS-App.
-
 </string>
                                         <attributes>
-                                            <font key="NSFont" size="24" name="SFMono-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Code">
-                                        <attributes>
-                                            <font key="NSFont" size="24" name="SFMono-Medium"/>
-                                            <font key="NSOriginalFont" size="24" name="SFMono-Medium"/>
+                                            <font key="NSFont" size="22" name="AvenirNext-DemiBold"/>
+                                            <font key="NSOriginalFont" size="22" name="AvenirNext-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -59,7 +52,23 @@
 Cg
 </string>
                                         <attributes>
-                                            <font key="NSFont" size="24" name="SFMono-Bold"/>
+                                            <font key="NSFont" size="22" name="AvenirNext-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Code">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="AvenirNext-DemiBold"/>
+                                            <font key="NSOriginalFont" size="22" name="AvenirNext-DemiBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="AvenirNext-Regular"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -70,8 +79,8 @@ Simon Wilmes
 Jan Mustermann
 </string>
                                         <attributes>
-                                            <font key="NSFont" size="24" name="SFMono-Light"/>
-                                            <font key="NSOriginalFont" size="24" name="SFMono-Light"/>
+                                            <font key="NSFont" size="22" name="AvenirNext-Regular"/>
+                                            <font key="NSOriginalFont" size="22" name="AvenirNext-Regular"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -80,14 +89,15 @@ Jan Mustermann
 Cg
 </string>
                                         <attributes>
-                                            <font key="NSFont" size="24" name="SFMono-Bold"/>
+                                            <font key="NSFont" size="22" name="AvenirNext-UltraLight"/>
+                                            <font key="NSOriginalFont" size="22" name="AvenirNext-UltraLight"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="Design">
                                         <attributes>
-                                            <font key="NSFont" size="24" name="SFMono-Medium"/>
-                                            <font key="NSOriginalFont" size="24" name="SFMono-Medium"/>
+                                            <font key="NSFont" size="22" name="AvenirNext-DemiBold"/>
+                                            <font key="NSOriginalFont" size="22" name="AvenirNext-DemiBold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -96,7 +106,7 @@ Cg
 Cg
 </string>
                                         <attributes>
-                                            <font key="NSFont" size="24" name="SFMono-Bold"/>
+                                            <font key="NSFont" size="22" name="AvenirNext-Regular"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -104,8 +114,8 @@ Cg
                                         <string key="content">Pascal Schule
 Manuel Blum</string>
                                         <attributes>
-                                            <font key="NSFont" size="24" name="SFMono-Light"/>
-                                            <font key="NSOriginalFont" size="24" name="SFMono-Light"/>
+                                            <font key="NSFont" size="22" name="AvenirNext-Regular"/>
+                                            <font key="NSOriginalFont" size="22" name="AvenirNext-Regular"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
