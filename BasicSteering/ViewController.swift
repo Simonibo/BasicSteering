@@ -44,11 +44,26 @@ class ViewController: UIViewController {
         if forward, let image = UIImage(named: "LKWh.png") {
             busbutton.setImage(image, for: [])
             forward = false
-            print("zuruck")
         } else if !forward, let imagen = UIImage(named: "LKWv.png") {
             busbutton.setImage(imagen, for: [])
             forward = true
-            print("vorne")
+        }
+        if curDir == 2 {
+            curDir = 3
+            if let image = UIImage(named: "rV.png") {
+                rbutton.setImage(image, for: [])
+            }
+            if let image = UIImage(named: "lL.png") {
+                rbutton.setImage(image, for: [])
+            }
+        } else if curDir == 3 {
+            curDir = 2
+            if let image = UIImage(named: "rL.png") {
+                rbutton.setImage(image, for: [])
+            }
+            if let image = UIImage(named: "lV.png") {
+                rbutton.setImage(image, for: [])
+            }
         }
         sendSignal()
     }
