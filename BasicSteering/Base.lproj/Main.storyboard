@@ -43,7 +43,7 @@
 </string>
                                         <attributes>
                                             <font key="NSFont" size="22" name="AvenirNext-DemiBold"/>
-                                            <font key="NSOriginalFont" size="22" name="AvenirNext-Medium"/>
+                                            <font key="NSOriginalFont" size="22" name="AvenirNext-DemiBold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -53,6 +53,7 @@ Cg
 </string>
                                         <attributes>
                                             <font key="NSFont" size="22" name="AvenirNext-Regular"/>
+                                            <font key="NSOriginalFont" size="20" name="AvenirNext-Regular"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -69,6 +70,7 @@ Cg
 </string>
                                         <attributes>
                                             <font key="NSFont" size="22" name="AvenirNext-Regular"/>
+                                            <font key="NSOriginalFont" size="20" name="AvenirNext-Regular"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -76,11 +78,10 @@ Cg
                                         <string key="content">Marvin von Hagen
 Simon Bohnen
 Simon Wilmes
-Jan Mustermann
-</string>
+Jan Mustermann</string>
                                         <attributes>
                                             <font key="NSFont" size="22" name="AvenirNext-Regular"/>
-                                            <font key="NSOriginalFont" size="22" name="AvenirNext-Regular"/>
+                                            <font key="NSOriginalFont" size="24" name="AvenirNext-Regular"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -89,8 +90,8 @@ Jan Mustermann
 Cg
 </string>
                                         <attributes>
-                                            <font key="NSFont" size="22" name="AvenirNext-UltraLight"/>
-                                            <font key="NSOriginalFont" size="22" name="AvenirNext-UltraLight"/>
+                                            <font key="NSFont" size="22" name="AvenirNext-Regular"/>
+                                            <font key="NSOriginalFont" size="20" name="AvenirNext-UltraLight"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -107,15 +108,17 @@ Cg
 </string>
                                         <attributes>
                                             <font key="NSFont" size="22" name="AvenirNext-Regular"/>
+                                            <font key="NSOriginalFont" size="20" name="AvenirNext-Regular"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
                                         <string key="content">Pascal Schule
-Manuel Blum</string>
+Manuel Blum
+Aria Biazar</string>
                                         <attributes>
                                             <font key="NSFont" size="22" name="AvenirNext-Regular"/>
-                                            <font key="NSOriginalFont" size="22" name="AvenirNext-Regular"/>
+                                            <font key="NSOriginalFont" size="24" name="AvenirNext-Regular"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
