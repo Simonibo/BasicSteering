@@ -12,7 +12,7 @@
 		CE4A1D7E1EF3FC7500A3677B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4A1D7C1EF3FC7500A3677B /* Main.storyboard */; };
 		CE4A1D801EF3FC7500A3677B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4A1D7F1EF3FC7500A3677B /* Assets.xcassets */; };
 		CE4A1D831EF3FC7500A3677B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4A1D811EF3FC7500A3677B /* LaunchScreen.storyboard */; };
-		CE4C0CFE1EF5148000EF2554 /* bus_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = CE4C0CFD1EF5148000EF2554 /* bus_bg.png */; };
+		F73AA2031EF5171E0056A25F /* LKW.gif in Resources */ = {isa = PBXBuildFile; fileRef = F73AA2021EF5171E0056A25F /* LKW.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		CE4A1D7F1EF3FC7500A3677B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE4A1D821EF3FC7500A3677B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE4A1D841EF3FC7500A3677B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE4C0CFD1EF5148000EF2554 /* bus_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bus_bg.png; path = ../../Downloads/bus_bg.png; sourceTree = "<group>"; };
+		F73AA2021EF5171E0056A25F /* LKW.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = LKW.gif; path = ../../Downloads/LKW.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +40,7 @@
 		CE4A1D6C1EF3FC7500A3677B = {
 			isa = PBXGroup;
 			children = (
-				CE4C0CFD1EF5148000EF2554 /* bus_bg.png */,
+				F73AA2021EF5171E0056A25F /* LKW.gif */,
 				CE4A1D771EF3FC7500A3677B /* BasicSteering */,
 				CE4A1D761EF3FC7500A3677B /* Products */,
 			);
@@ -129,8 +129,8 @@
 			files = (
 				CE4A1D831EF3FC7500A3677B /* LaunchScreen.storyboard in Resources */,
 				CE4A1D801EF3FC7500A3677B /* Assets.xcassets in Resources */,
+				F73AA2031EF5171E0056A25F /* LKW.gif in Resources */,
 				CE4A1D7E1EF3FC7500A3677B /* Main.storyboard in Resources */,
-				CE4C0CFE1EF5148000EF2554 /* bus_bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
