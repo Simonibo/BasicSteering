@@ -20,7 +20,7 @@
 		F73AA2171EF51D480056A25F /* lV.png in Resources */ = {isa = PBXBuildFile; fileRef = F73AA2111EF51D480056A25F /* lV.png */; };
 		F73AA2181EF51D480056A25F /* rV.png in Resources */ = {isa = PBXBuildFile; fileRef = F73AA2121EF51D480056A25F /* rV.png */; };
 		F73AA2191EF51D480056A25F /* rL.png in Resources */ = {isa = PBXBuildFile; fileRef = F73AA2131EF51D480056A25F /* rL.png */; };
-		F746CADF1EF55ABF00E62667 /* stopSign.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F746CADE1EF55ABE00E62667 /* stopSign.jpg */; };
+		F746CADF1EF55ABF00E62667 /* stopSign.png in Resources */ = {isa = PBXBuildFile; fileRef = F746CADE1EF55ABE00E62667 /* stopSign.png */; };
 		F7EDC1D81EF5534900E4A76E /* vLZ.png in Resources */ = {isa = PBXBuildFile; fileRef = F7EDC1D21EF5534700E4A76E /* vLZ.png */; };
 		F7EDC1D91EF5534900E4A76E /* rVZ.png in Resources */ = {isa = PBXBuildFile; fileRef = F7EDC1D31EF5534800E4A76E /* rVZ.png */; };
 		F7EDC1DA1EF5534900E4A76E /* vVZ.png in Resources */ = {isa = PBXBuildFile; fileRef = F7EDC1D41EF5534800E4A76E /* vVZ.png */; };
@@ -45,7 +45,7 @@
 		F73AA2111EF51D480056A25F /* lV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lV.png; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/lV.png"; sourceTree = "<group>"; };
 		F73AA2121EF51D480056A25F /* rV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rV.png; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/rV.png"; sourceTree = "<group>"; };
 		F73AA2131EF51D480056A25F /* rL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rL.png; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/rL.png"; sourceTree = "<group>"; };
-		F746CADE1EF55ABE00E62667 /* stopSign.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = stopSign.jpg; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/stopSign.jpg"; sourceTree = "<group>"; };
+		F746CADE1EF55ABE00E62667 /* stopSign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stopSign.png; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/stopSign.png"; sourceTree = "<group>"; };
 		F7EDC1D21EF5534700E4A76E /* vLZ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vLZ.png; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/vLZ.png"; sourceTree = "<group>"; };
 		F7EDC1D31EF5534800E4A76E /* rVZ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rVZ.png; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/rVZ.png"; sourceTree = "<group>"; };
 		F7EDC1D41EF5534800E4A76E /* vVZ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = vVZ.png; path = "../../Downloads/BasicSteering-master/BasicSteering/SteeringData/vVZ.png"; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 				F7EDC1D31EF5534800E4A76E /* rVZ.png */,
 				F7EDC1D21EF5534700E4A76E /* vLZ.png */,
 				F7EDC1D41EF5534800E4A76E /* vVZ.png */,
-				F746CADE1EF55ABE00E62667 /* stopSign.jpg */,
+				F746CADE1EF55ABE00E62667 /* stopSign.png */,
 				CE4A1D771EF3FC7500A3677B /* BasicSteering */,
 				CE4A1D761EF3FC7500A3677B /* Products */,
 			);
@@ -173,7 +173,7 @@
 				CE4A1D831EF3FC7500A3677B /* LaunchScreen.storyboard in Resources */,
 				F73AA2181EF51D480056A25F /* rV.png in Resources */,
 				F7EDC1DB1EF5534900E4A76E /* rLZ.png in Resources */,
-				F746CADF1EF55ABF00E62667 /* stopSign.jpg in Resources */,
+				F746CADF1EF55ABF00E62667 /* stopSign.png in Resources */,
 				F7EDC1D91EF5534900E4A76E /* rVZ.png in Resources */,
 				F7212B3E1EF5298C00CA9E0E /* LKWv.png in Resources */,
 				F73AA2161EF51D480056A25F /* vL.png in Resources */,
