@@ -120,7 +120,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func rzclicked(_ sender: Any) {
-        counter = 6
+        counter = 5
         resetAllImageButtons()
         if let image = UIImage(named: "rVZ.png") {
             rzbutton.setImage(image, for: [])
@@ -129,7 +129,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func lzclicked(_ sender: Any) {
-        counter = 5
+        counter = 6
         resetAllImageButtons()
         if let image = UIImage(named: "lVZ.png") {
             lzbutton.setImage(image, for: [])
