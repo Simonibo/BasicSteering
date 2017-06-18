@@ -69,15 +69,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func busclicked(_ sender: Any) {
+        resetAllImageButtons()
         if auto {
-            resetAllImageButtons()
             if let image = UIImage(named: "LKWv.png") {
                 busbutton.setImage(image, for: [])
             }
             counter = 0
             auto = false
         } else {
-            resetAllImageButtons()
             if let image = UIImage(named: "LKWh.png") {
                 busbutton.setImage(image, for: [])
             }
