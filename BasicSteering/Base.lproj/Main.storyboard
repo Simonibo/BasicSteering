@@ -35,7 +35,7 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="headTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AiU-g6-NT1">
-                                <rect key="frame" x="16" y="64" width="288" height="484"/>
+                                <rect key="frame" x="16" y="64" width="288" height="496"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -78,10 +78,16 @@ Cg
                                         <string key="content">Marvin von Hagen
 Simon Bohnen
 Simon Wilmes
-Jan Mustermann</string>
+Jan </string>
                                         <attributes>
                                             <font key="NSFont" size="22" name="AvenirNext-Regular"/>
                                             <font key="NSOriginalFont" size="24" name="AvenirNext-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Fromm">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="AvenirNext-Regular"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -112,8 +118,21 @@ Cg
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
+                                    <fragment content="Pascal Schu">
+                                        <attributes>
+                                            <font key="NSFont" size="22" name="AvenirNext-Regular"/>
+                                            <font key="NSOriginalFont" size="24" name="AvenirNext-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="bel">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="AvenirNext-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
                                     <fragment>
-                                        <string key="content">Pascal Schule
+                                        <string key="content">
 Manuel Blum
 Aria Biazar</string>
                                         <attributes>
