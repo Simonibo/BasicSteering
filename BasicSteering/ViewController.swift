@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet var vzbutton: UIButton!
     @IBOutlet var rzbutton: UIButton!
     
-    let aiokey = "6e15aaddcb8d4b7ebdbce8f612020469"
+    let aiokey = "e03b7fcf6e7c41cab6fc57db7b2102ec"
     var counter = 0
     var auto = false
     
@@ -69,18 +69,19 @@ class ViewController: UIViewController {
     }
     
     @IBAction func busclicked(_ sender: Any) {
-        resetAllImageButtons()
         if auto {
+            resetAllImageButtons()
             if let image = UIImage(named: "LKWv.png") {
                 busbutton.setImage(image, for: [])
             }
-            counter = 0
+            counter = 7
             auto = false
         } else {
+            resetAllImageButtons()
             if let image = UIImage(named: "LKWh.png") {
                 busbutton.setImage(image, for: [])
             }
-            counter = 7
+            counter = 9
             auto = true
         }
         sendSignal()
